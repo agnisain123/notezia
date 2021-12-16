@@ -4,10 +4,10 @@
     --subheading-size: 1.5rem;
     --font-size: 1.1rem;
     --bg-primary: #FFFFFF;
-    --bg-secondary: #FAFBFC;
+    --bg-secondary: #f6dfc8;
     --text-primary: #000000;
-    --text-secondary: #414141;
-    --brand-color: #F4A641;
+    --text-secondary: #100f0d;
+    --brand-color: rgb(244, 194, 13);
     --red: rgb(219, 50, 54);
     --yellow: rgb(244, 194, 13);
     --blue: rgb(72, 133, 237);
@@ -27,6 +27,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    transition: all 0.4s;
 }
 
 html {
@@ -45,4 +46,26 @@ body {
     text-align: left;
     background-color: var(--bg-primary);
     overflow-x: hidden;
+}
+
+/* .navbar-item img {
+    max-height: 3.25rem;
+}
+
+@media screen and (min-device-width: 1280px) {
+    .navbar-item img {
+        max-height: 6rem;
+    }
+} */
+
+a {
+    color: var(--brand-color);
+}
+
+.has-text-primary {
+    color: var(--brand-color) !important;
+}
+
+.is-primary {
+    background-color: var(--brand-color) !important;
 }
