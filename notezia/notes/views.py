@@ -1,3 +1,4 @@
+from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Note
@@ -34,4 +35,8 @@ class UserAPI(APIView):
         else:
             return Response({'message': 'Route Exists'}) 
 
-    
+def landing(request):
+    return render(request, "landing.html")
+
+def note(request):
+    return render(request, "note.html")
