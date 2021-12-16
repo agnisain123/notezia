@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block mainPage %}
+
+<section class="hero is-fullheight-with-navbar has-bg" id="home">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-6">
+            <h1 class="title has-text-primary is-size-1 font-heading" data-aos="fade-right">
+                Save your notes on the web
+            </h1>
+            <p class="" data-aos="fade-right">
+                Notezia is a free, online notepad to write down your texts, encrypt them with a password and access them from anywhere from any device!
+            </p>
+            <br>
+            <form action="/api/" method="post">
+                <div class="field has-addons">
+                    <div class="control">
+                        <a class="button is-primary has-text-weight-medium">
+                          Go to notezia.ml/
+                        </a>
+                      </div>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="custom url" name="route">
+                    </div>
+                  </div>
+              </form>
+          </div>
+          <div class="column is-6">
+              <img src="/static/images/landing.svg" alt="Taking Notes">
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+{% endblock %}

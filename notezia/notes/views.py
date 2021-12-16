@@ -1,4 +1,5 @@
 from django.db import reset_queries
+from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Note
@@ -37,3 +38,9 @@ class UserAPI(APIView):
             return Response({'message': 'Route does not exist'}) 
         else:
             return Response({'message': 'Route Exists'}) 
+
+def landing(request):
+    return render(request, "landing.html")
+
+def note(request):
+    return render(request, "note.html")
